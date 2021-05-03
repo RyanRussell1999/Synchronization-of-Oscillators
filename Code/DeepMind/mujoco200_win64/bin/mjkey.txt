@@ -1,0 +1,20 @@
+MuJoCo Pro Trial license activation key, number 149968, type 6.
+
+Issued to Ryan Russell <rcrussell@mail.bradley.edu>.
+
+Expires October 1, 2020.
+
+This file activates MuJoCo Pro on a single computer with id:
+WINDOWS_2TS1IBAT2NS42K56GVNHM7288N256GB_T32SH00CTN1O395
+
+Do not modify this file. Its entire content, including the
+plain text section, is used by the activation manager.
+
+19f3f750952033d2d522c5a2d50100d4da0ed2246bb70a26b61c3ca9f3be287a
+6ee3c44823f79da5061de4609dead70d10935a701139a1853ac03aa9786b6caf
+9421db689fec38df12a53c3fc6d8ab6ec5d60ed362ca2ad93700b17a77965530
+9e3a8af1b5dc7dcd7b9e14ed11723969fc0a87ee188d51025f34673312a8472f
+ac9d9c92c4cbbcefa20e4d6fd91cca92e241b98e1fb9d9ea771e1a42926b7d08
+3b0a33aeef2e4e6f6b3f5480c81e05e6f1616d2ce0097da66e63debdbc1acf9f
+cb4e919f2866560cce0598cffe535640f608c7dace8f8eaee1a09f0ffa7e3f14
+ad42c7ab32426df14d0581ec45c67b6927c12c01014482d182f667eee0bc6acd

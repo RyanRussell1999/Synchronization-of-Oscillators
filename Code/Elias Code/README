@@ -1,0 +1,42 @@
+Files Included:
+RLCon_Q_cart_neural.py
+network.py
+
+Dependencies:
+numpy
+matplotlib.pyplot
+scipy
+torch
+
+run as: python RLCon_Q_cart_neural.py
+
+
+The basic premise is we want each agent to learn how to estimate its own
+Q-value. The neural networks are then our estimation tool. Each agent has
+an 'Agent' object associated with it, which you can find in the network.py
+script. There are three classes in that script: Net, Agent, and Control.
+
+The Net object is the neural network. In the initialization the layers are
+created and the forward pass includes the activation functions. I have opted
+to use the 'swish' activation. For theoretical reasons we want a continuous
+activation function and we know ReLU (rectified linear unit) is one of the best
+so the swish is kind of a continuous version of this. You'll notice I have
+ReLU operating on the output of the last layer. This is because I am trying to
+keep the output of the network positive. At first I tried simply squaring
+the output (x = self.fc3(x)**2) but I was unsure of its effects. ReLU is a
+temporary fix to try and get something to work. The other functions Included
+in Net are for mapping the state space to a [0,1] range since Neural nets like
+that. I have yet to implement these (I copied them from another project so they
+need tweaking probably).
+
+The Agent object initializes the Net object and is called on to do the things
+we need. update_weights() uses the built in automatic differentiation in PyTorch
+to update the weight in the Net using our update law. eval() simply evaluates
+the Net (remember that torch things need tensors not numpy arrays). action() is
+the goofiest function here. We need to minimize the output of the Q-function to
+find our optimal control so that is what this function does. It uses the Control
+class to set up a neural net like object. Doing that allows me to really use
+PyTorch for what its good at and solve the optimization problem as if it were a
+neural network. Essentially it updates the weight in a single output single
+input fully connected layer ( output = weight*input) and I am feeding 1 as
+the input (output = weight*1). So, essentially the weight is the control value.

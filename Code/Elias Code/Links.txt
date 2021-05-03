@@ -1,0 +1,11 @@
+https://towardsdatascience.com/cartpole-introduction-to-reinforcement-learning-ed0eb5b58288
+
+https://ethanweber.me/cartpole.html
+
+https://www.mne.k-state.edu/teaching-labs/dynamic-systems/inverted-pendulum/
+
+https://create.arduino.cc/projecthub/zjor/inverted-pendulum-on-a-cart-199d6f
+
+https://github.com/deepmind/dm_control
+
+https://arxiv.org/abs/1801.00690
