@@ -10,7 +10,7 @@ This folder contains code to test the variety of parts needed to physically impl
 ## Physical Implementation of RL Algorithm
 This folder contains the code used to physically implement the reinforcement learning algorithm to synchronize oscillators on a virtual leader. Within the Blue oscillator, there is one file for a single follower oscillator (Leader) and another for two follower oscillators (Pos). The Orange oscillator has one file for two follower oscillators. These files have a virtual leader following a square wave for velocity. The single follower yields promising results, however there are issues with the two followers. This code is only to be run on the NVIDIA Jetson Nano, following the same GPIO configuration as in the project.
 
-![Alt text](https://github.com/RyanRussell1999/Synchronization-of-Oscillators/tree/main/images/Single_Oscillator_Results.jpg?raw=true "Single Oscillator Synchronization Results")
+![Alt text](images/Single_Oscillator_Results.jpg?raw=true "Single Oscillator Synchronization Results")
 
 ## Simulation of RL Algorithm
 This folder contains simulations of the reinforcement learning algorithm to synchronize oscillators to a leader following a sinusoidal trajectory. There are simulations for a linear controller, the RL controller, and the RL controller with limited velocity. All of these have two followers and one leader. All simulations yield synchronization in a short period  of time. The results from these verify the algorithm and laid groundwork to implement the algorithm physically.
